@@ -2,13 +2,13 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Profile card component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+ 
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
@@ -16,13 +16,47 @@
 </head>
 <body>
       <div class="container">
-          <div class="bg-ballong-top">
-            <img src="images/bg-pattern-top.svg" alt="">
+            <div class="bg-ballong-top">
+              <img src="images/bg-pattern-top.svg" alt="">
+            </div>
+            <div class="bg-ballong-bottom">
+              <img src="images/bg-pattern-bottom.svg" alt="">
+            </div>
+          <div class="content">
+             <div class="card">
+                <div class="card-profile">
+                    <span class="img-profile">
+                      <img src="images/image-victor.jpg" alt="">
+                    </span>
+                    <h2 class="name-profile"> 
+                      victor crest
+                    <span class="age-profile">26</span>
+                    </h2>
+                    <p class="city-profile">london</p>                   
+                </div>
+
+                <div class="card-footer">
+                    <ul class="social-numbers">
+                      <li class="item-social-numbers">
+                        <span class="number">80k</span>
+                        <span class="socil-description">Followers</span>
+                      </li>
+                      <li class="item-social-numbers">
+                        <span class="number">803k</span>
+                        <span class="socil-description">Likes</span>
+                      </li>
+                      <li class="item-social-numbers">
+                        <span class="number">1.4k</span>
+                        <span class="socil-description">Photos</span>
+                      </li>  
+                    </ul>
+                </div>
+             </div>
+            
           </div>
-          <div class="bg-ballong-bottom">
-            <img src="images/bg-pattern-bottom.svg" alt="">
-          </div>
+
       </div>
+
 
       <div class="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
