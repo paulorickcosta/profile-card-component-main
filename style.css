@@ -1,6 +1,6 @@
 :root {
     --dark-cyan: hsl(185, 75%, 39%);
-    --Very-dark: hsl(229, 23%, 23%);
+    --dark-blue: hsl(229, 23%, 23%);
     --Dark-grayish: hsl(227, 10%, 46%);
     --Dark-gray: hsl(0, 0%, 59%);
 }
@@ -28,6 +28,8 @@ body,html {
 .container {
     background-color: var(--dark-cyan);
     height: 100%;
+    position: relative;
+    overflow: hidden;
 }
 
 .bg-ballong-top {
@@ -43,3 +45,100 @@ body,html {
     left: 50%;
     z-index: 9;
 }
+
+.content {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card {
+    position: relative;
+    z-index: 10;
+    width: 345px;
+    height: 375px;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    background-image: url('images/bg-pattern-card.svg');
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.img-profile img {
+    max-width: 100%;
+    border-radius: 50%;
+    border: 5px solid #FFFFFF;
+
+}
+
+.name-profile {
+    text-transform: capitalize;
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--dark-blue);
+    padding-top: 1rem;
+}
+
+.age-profile {
+    color: var(--Dark-grayish);
+    font-weight: 400;
+
+}
+
+.city-profile {
+    text-transform: capitalize;
+    color: var(--Dark-gray);
+    font-size: 14px;
+    padding-top: .5rem;
+    margin-bottom: 1rem;
+}
+
+.card-footer {
+    position: absolute;
+    bottom: 0;
+    border-top: 1px solid #c2bfbf;
+    width: 100%;
+
+}
+
+.social-numbers {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.item-social-numbers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.number {
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: .2rem;
+}
+
+.social-description {
+    text-transform: capitalize;
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
